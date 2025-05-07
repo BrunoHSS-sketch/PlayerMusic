@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "PlayerMusic",
-    "slug": "PlayerMusic",
+    "slug": "musicplayer",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,7 +18,8 @@
         "NSMicrophoneUsageDescription": "Este aplicativo requer acesso ao microfone para funcionalidades de áudio.",
         "UIBackgroundModes": [
           "audio"
-        ]
+        ],
+        "NSAppleMusicUsageDescription": "Allow $(PRODUCT_NAME) to access your music library"
       }
     },
     "android": {
@@ -37,6 +38,12 @@
     },
     "plugins": [
       "expo-music-picker"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b9f2e74e-5678-44b4-a4c4-127b9318f525"
+      }
+    },
+    "owner": "brunohss-sketch"
   }
 }
